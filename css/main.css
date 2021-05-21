@@ -218,7 +218,7 @@ body {
    white-space: nowrap;
    clip-path: inset(100%);
    clip: rect(0 0 0 0);
-   overflow: hidden;
+
 
    border: 0;
 }
@@ -427,8 +427,6 @@ img {
    outline: none;
 }
 
-.form-field input:focus + .modal-form-svg { fill: var(--accent-color); }
-
 .modal-wrapper {
    position: relative;
 
@@ -441,7 +439,10 @@ img {
    left: 12px;
 
    fill: var(--title-color);
+   transition: fill var(--trans-duration) var(--trans-timing);
 }
+
+.form-field input:focus + .modal-form-svg { fill: var(--accent-color); }
 
 .comment {
    display: inline-block;
@@ -493,11 +494,6 @@ img {
    transition: border var(--trans-duration) var(--trans-timing);
 }
 
-.checkbox-label::before:focus {
-   border: 1px solid var(--accent-color);
-   outline: none;
-}
-
 .checkbox:checked + .checkbox-label::before {
    background-color: var(--accent-color);
    background-image: url("../images/check.svg");
@@ -506,7 +502,13 @@ img {
    background-repeat: no-repeat;
    background-origin: border-box;
    border-color: var(--accent-color);
-   transition: background-color var(--trans-duration) var(--trans-timing), background-image var(--trans-duration) var(--trans-timing);
+   transition: background-color var(--trans-duration) var(--trans-timing), background-image var(--trans-duration) var(--trans-timing), box-shadow var(--trans-duration) var(--trans-timing);
+}
+
+.checkbox:checked:focus + .checkbox-label::before {
+   border: 2px solid var(--accent-color);
+   outline: none;
+   box-shadow: var(--portfolio-btn-shadow);
 }
 
 /* Преимущества работы со студией */
