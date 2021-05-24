@@ -22,17 +22,22 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header-links">
-      <div class="container full-nav">
+      <div class="container container__full-nav">
         <nav class="main-nav">
           <!-- Лого сайта -->
-          <a href="./index.html" lang="en" class="logo-accent link"
-            >Web<span class="logo-header link">Studio</span></a
+          <a
+            href="./index.html"
+            lang="en"
+            class="logo header-links__logo logo--accent link"
+            >Web<span class="logo logo--header link">Studio</span></a
           >
 
           <!-- Навигация на другие страницы -->
           <ul class="site-nav list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link current"
+              <a
+                href="./index.html"
+                class="site-nav__link site-nav__link--current link"
                 >Студия</a
               >
             </li>
@@ -47,21 +52,18 @@
           </ul>
         </nav>
 
-        <ul class="contacts-header list">
-          <li class="contacts-header__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts-header__link link"
-            >
-              <svg class="contacts-header__icon" width="16" height="12">
+        <ul class="contacts header-links__contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link link">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-header__item">
-            <a href="tel:+380961111111" class="contacts-header__link link">
-              <svg class="contacts-header__icon" width="10" height="16">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link link">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -79,7 +81,7 @@
             Эффективные решения
             <span class="hero__indent">для вашего бизнеса</span>
           </h1>
-          <button data-modal-open type="button" class="hero__button">
+          <button data-modal-open type="button" class="button hero__button">
             Заказать услугу
           </button>
         </div>
@@ -148,7 +150,7 @@
       </section>
 
       <!-- Примеры работ -->
-      <section class="section examples">
+      <section class="section section__examples">
         <div class="container">
           <h2 class="main__title">Чем мы занимаемся</h2>
 
@@ -159,6 +161,7 @@
                 alt="Программирование приложений"
                 width="370"
                 height="294"
+                class="examples__img"
               />
               <div class="examples__overlay">
                 <p class="examples__text">Десктопные приложения</p>
@@ -171,6 +174,7 @@
                 alt="Создание дизайна приложений"
                 width="370"
                 height="294"
+                class="examples__img"
               />
               <div class="examples__overlay">
                 <p class="examples__text">Мобильные приложения</p>
@@ -183,6 +187,7 @@
                 alt="Подбор подходящей цветовой гаммы"
                 width="370"
                 height="294"
+                class="examples__img"
               />
               <div class="examples__overlay">
                 <p class="examples__text">Дизайнерские решения</p>
@@ -193,7 +198,7 @@
       </section>
 
       <!-- Команда -->
-      <section class="section team">
+      <section class="section section__team">
         <div class="container">
           <h2 class="main__title">Наша команда</h2>
 
@@ -204,6 +209,7 @@
                 alt="Фото Игоря Демьяненко"
                 width="270"
                 height="260"
+                class="team__img"
               />
               <div class="team__description">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -273,6 +279,7 @@
                 alt="Фото Ольги Репиной"
                 width="270"
                 height="260"
+                class="team__img"
               />
               <div class="team__description">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -342,6 +349,7 @@
                 alt="Фото Николая Тарасова"
                 width="270"
                 height="260"
+                class="team__img"
               />
               <div class="team__description">
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -411,6 +419,7 @@
                 alt="Фото Михаила Ермакова"
                 width="270"
                 height="260"
+                class="team__img"
               />
               <div class="team__description">
                 <h3 class="team__title">Михаил Ермаков</h3>
@@ -572,47 +581,51 @@
 
     <!-- Футер -->
     <footer class="footer-links">
-      <div class="container">
-        <div class="address">
-          <a href="./index.html" lang="en" class="logo-accent link"
-            >Web<span class="logo-footer link">Studio</span></a
+      <div class="container container__footer-links">
+        <div class="contacts-block">
+          <a href="./index.html" lang="en" class="logo logo--accent link"
+            >Web<span class="logo logo--footer link">Studio</span></a
           >
-          <address>
-            <ul class="list">
-              <li class="footer-address">
+          <address class="address-links">
+            <ul class="contacts list">
+              <li class="contacts__item-footer">
                 <a
-                  class="map-link link"
+                  class="contacts__map contacts__link-footer link"
                   href="https://goo.gl/maps/onrn5g9ZaPqnStBHA"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="contacts-footer">
-                <a href="mailto:info@example.com" class="link"
+              <li class="contacts__item-footer">
+                <a
+                  href="mailto:info@example.com"
+                  class="contacts__link-footer link"
                   >info@example.com</a
                 >
               </li>
-              <li class="contacts-footer">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              <li class="contacts__item-footer">
+                <a href="tel:+380991111111" class="contacts__link-footer link"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
 
         <!-- Ссылки на соц. сети -->
-        <div class="social-media-footer">
-          <p class="social-media-text">присоединяйтесь</p>
-          <ul class="social-media-footer list">
+        <div class="contacts-block">
+          <p class="slogan-text">присоединяйтесь</p>
+          <ul class="social-media list">
             <li class="social-media__item">
               <a
                 href=""
                 aria-label="Инстаграм"
-                class="social-media__link"
+                class="social-media__link social-media__link--footer-style"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer social-media__icon">
+                <svg class="social-media__icon social-media__icon--white">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -621,11 +634,11 @@
               <a
                 href=""
                 aria-label="Твиттер"
-                class="social-media__link"
+                class="social-media__link social-media__link--footer-style"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="social-media__icon">
+                <svg class="social-media__icon social-media__icon--white">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -634,11 +647,11 @@
               <a
                 href=""
                 aria-label="Фейсбук"
-                class="social-media__link"
+                class="social-media__link social-media__link--footer-style"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="social-media__icon">
+                <svg class="social-media__icon social-media__icon--white">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -647,11 +660,11 @@
               <a
                 href=""
                 aria-label="Линкедин"
-                class="social-media__link"
+                class="social-media__link social-media__link--footer-style"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="social-media__icon">
+                <svg class="social-media__icon social-media__icon--white">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -660,22 +673,22 @@
         </div>
 
         <!-- Подписаться на рассылку в футере -->
-        <div class="subscription-footer">
-          <form autocomplete="off" class="footer-form">
-            <p class="social-media-text">Подпишитесь на рассылку</p>
-            <div>
-              <label class="form-field">
+        <div class="subscription">
+          <form autocomplete="off" class="form">
+            <p class="slogan-text">Подпишитесь на рассылку</p>
+            <div class="subscription__wrapper">
+              <label class="form__field-footer">
                 <input
                   type="email"
-                  class="form-input"
+                  class="form__input-footer"
                   name="email"
                   placeholder="E-mail"
                 />
               </label>
 
-              <button class="mail-submit-btn" type="submit">
+              <button class="button subscription__button" type="submit">
                 Подписаться
-                <svg class="footer-form-svg">
+                <svg class="subscription__icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -690,58 +703,58 @@
       <div class="modal">
         <button
           data-modal-close
-          class="modal__close-btn"
+          class="modal__close-button"
           aria-label="Закрыть"
           type="submit"
         >
-          <svg class="modal__close-svg">
+          <svg class="modal__close-icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-        <form autocomplete="off" class="modal__form">
+        <form autocomplete="off" class="form">
           <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="modal__field">
+          <label class="form__field">
             Имя
             <span class="modal__wrapper">
               <input
                 type="text"
-                class="modal__input"
+                class="form__input"
                 name="name"
                 pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
               />
-              <svg class="modal__svg">
+              <svg class="modal__icon">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal__field">
+          <label class="form__field">
             Телефон
             <span class="modal__wrapper">
               <input
                 type="tel"
-                class="modal__input"
+                class="form__input"
                 name="phone_number"
                 pattern="[0-9]{5,10}"
               />
-              <svg class="modal__svg">
+              <svg class="modal__icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal__field">
+          <label class="form__field">
             Почта
             <span class="modal__wrapper">
-              <input type="email" class="modal__input" name="email" />
-              <svg class="modal__svg">
+              <input type="email" class="form__input" name="email" />
+              <svg class="modal__icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal__field">
+          <label class="form__field">
             <span class="modal__comment">Комментарий</span>
             <textarea
               class="modal__textarea"
@@ -757,7 +770,7 @@
             class="modal__checkbox visually-hidden"
             id="checkbox"
           />
-          <label class="checkbox-label" for="checkbox">
+          <label class="modal__checkbox-label" for="checkbox">
             Соглашаюсь с рассылкой и принимаю
             <a
               class="modal__terms"
@@ -768,7 +781,9 @@
             >
           </label>
 
-          <button class="modal__submit-btn" type="submit">Отправить</button>
+          <button class="button modal__submit-button" type="submit">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
