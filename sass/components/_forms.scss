@@ -60,9 +60,7 @@
    transition: fill var(--trans-duration) var(--trans-timing);
 }
 
-.form__input:focus + .form__icon {
-   fill: var(--accent-color);
-}
+.form__input:focus + .form__icon { @extend %accent-fill; }
 
 .form__input-footer:focus:invalid,
 .form__input:focus:invalid + .form__icon,

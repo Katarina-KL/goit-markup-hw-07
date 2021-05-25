@@ -1,6 +1,7 @@
 :root {
    --main-font: 'Roboto', sans-serif;
    --logo-font: 'Raleway', sans-serif;
+
    --accent-color: #2196f3;
    --body-hero-color: #fff;
    --title-color: #212121;
@@ -22,8 +23,6 @@
    --backdrop-color:  rgba(0,0,0,.2);
    --modal-window-shadow: 0px 1px 3px rgba(0,0,0,.12), 0px 1px 1px rgba(0,0,0,.14), 0px 2px 1px rgba(0,0,0,.2);
    --modal-close-button: #0000001A;
-   --trans-duration: 250ms;
-   --trans-timing: cubic-bezier(.4,0,.2,1);
    --overlay-portfolio-bcg: rgba(33,150,243,.9);
    --examples__overlay-bcg: rgba(47,48,58,.8);
    --modal-fields-border: rgba(33,33,33,.2);
@@ -32,4 +31,7 @@
    --border-footer-mail: rgba(255,255,255,.3);
    --input-footer-mail: drop-shadow(0px 4px 4px rgba(0,0,0,.15));
    --btn-bcg-focus: #188CE8;
+
+   --trans-duration: 250ms;
+   --trans-timing: cubic-bezier(.4,0,.2,1);
 }

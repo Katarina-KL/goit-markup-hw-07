@@ -9,11 +9,6 @@
    color: var(--main-text-color); 
 
    transition: color var(--trans-duration) var(--trans-timing);
-
-   &:hover,
-   &:focus {
-      @extend %accent-color;
-   }
 }
 
 .contacts__icon { 
@@ -39,20 +34,19 @@
    color: var(--footer-contacts-color); 
 
    transition: color var(--trans-duration) var(--trans-timing);
-
-   &:hover,
-   &:focus {
-      @extend %accent-color;
-   }
 }
 
 .contacts__map {
    color: var(--body-hero-color);
 
    transition: color var(--trans-duration) var(--trans-timing);
+}
 
-   &:hover,
-   &:focus {
-      @extend %accent-color;
-   }
+.contacts__link:hover,
+.contacts__link:focus,
+.contacts__link-footer:hover,
+.contacts__link-footer:focus,
+.contacts__map:hover,
+.contacts__map:focus {
+   @extend %accent-color;
 }
