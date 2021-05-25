@@ -2,9 +2,11 @@
 
 .examples { display: flex; }
 
-.examples__item:not(:last-child) { margin-right: 30px; }
+.examples__item { 
+   position: relative; 
 
-.examples__item { position: relative; }
+   &:not(:last-child) { margin-right: 30px; };
+}
 
 .examples__overlay {
    position: absolute;

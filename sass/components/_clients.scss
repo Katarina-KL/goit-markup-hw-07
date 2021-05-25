@@ -17,14 +17,12 @@
    box-sizing: border-box;
    border-radius: 4px;
    transition: fill var(--trans-duration) var(--trans-timing), border-color var(--trans-duration) var(--trans-timing);
-}
 
-.clients__link:hover,
-.clients__link:focus,
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon { 
-   @extend %accent-fill; 
-   border-color: var(--accent-color);
+   &:hover,
+   &:focus { 
+      @extend %accent-fill; 
+      border-color: var(--accent-color);
+   }
 }
 
 .clients__icon { 
@@ -33,4 +31,10 @@
 
    fill: var(--social-media-team);
    transition: fill var(--trans-duration) var(--trans-timing);
+
+   .clients__link:hover &,
+   .clients__link:focus & { 
+      @extend %accent-fill; 
+      border-color: var(--accent-color);
+   }
 }

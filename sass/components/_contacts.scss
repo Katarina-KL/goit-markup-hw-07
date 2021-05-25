@@ -9,6 +9,11 @@
    color: var(--main-text-color); 
 
    transition: color var(--trans-duration) var(--trans-timing);
+
+   &:hover,
+   &:focus {
+      @extend %accent-color;
+   }
 }
 
 .contacts__icon { 
@@ -26,27 +31,23 @@
    font-size: 14px;
    font-style: normal;
    line-height: 1.7;
-}
 
-.contacts__item-footer:not(:first-child) { margin-top: 9px; }
+   &:not(:first-child) { margin-top: 9px; };
+}
 
 .contacts__link-footer { 
    color: var(--footer-contacts-color); 
 
    transition: color var(--trans-duration) var(--trans-timing);
+
+   &:hover,
+   &:focus {
+      @extend %accent-color;
+   }
 }
 
 .contacts__map {
    color: var(--body-hero-color);
 
    transition: color var(--trans-duration) var(--trans-timing);
-}
-
-.contacts__link:hover,
-.contacts__link:focus,
-.contacts__link-footer:hover,
-.contacts__link-footer:focus,
-.contacts__map:hover,
-.contacts__map:focus {
-   @extend %accent-color;
 }

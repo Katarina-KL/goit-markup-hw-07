@@ -58,6 +58,11 @@
    border: 1px solid var(--modal-close-button);
    border-radius: 30px;
    transition: fill var(--trans-duration) var(--trans-timing);
+
+   &:hover,
+   &:focus { 
+      @extend %accent-fill;
+   }
 }
 
 .modal__close-icon {
@@ -65,11 +70,11 @@
    height: 18px;
 
    fill: var(--header-studio-color);
-}
 
-.modal__close-button:hover .modal__close-icon,
-.modal__close-button:focus .modal__close-icon {
-   @extend %accent-fill;
+   .modal__close-button:hover &,
+   .modal__close-button:focus & {
+      @extend %accent-fill;
+   }
 }
 
 .modal__text {

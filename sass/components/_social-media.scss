@@ -16,6 +16,12 @@
 
    border-radius: 50%;
    transition: fill var(--trans-duration) var(--trans-timing), background-color var(--trans-duration) var(--trans-timing);
+
+   &:hover,
+   &:focus {
+      fill: var(--body-hero-color); 
+      background-color: var(--accent-color); 
+   }
 }
 
 .social-media__icon {
@@ -25,18 +31,14 @@
    fill: var(--social-media-team);
 
    transition: fill var(--trans-duration) var(--trans-timing);
+
+   .social-media__link:hover &, 
+   .social-media__link:focus & { 
+      fill: var(--body-hero-color); 
+   }
 }
 
-.social-media__icon--white,
-.social-media__link:hover .social-media__icon, 
-.social-media__link:focus .social-media__icon { 
-   fill: var(--body-hero-color); 
-}
-
-.social-media__link:hover,
-.social-media__link:focus { 
-   background-color: var(--accent-color); 
-}
+.social-media__icon--white { fill: var(--body-hero-color); }
 
 .slogan-text {
    margin-bottom: 20px;

@@ -4,9 +4,7 @@
 	margin: 0;
 }
 
-.link { 
-   text-decoration: none; 
-}
+.link { text-decoration: none; }
 
 .section { padding: 94px 0; }
 
@@ -31,4 +29,34 @@
    overflow: hidden;
 
    border: 0;
+}
+
+.button {
+   min-width: 200px;
+   padding: 10px 32px;
+
+   font-family: inherit;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 2;
+   letter-spacing: .06em;
+   color: var(--body-hero-color);
+   text-align: center;
+   cursor: pointer;
+
+   background-color: var(--accent-color);
+   border: 1px solid transparent;
+   border-radius: 4px;
+   box-shadow: var(--hero-btn-shadow);
+   transition: background-color var(--trans-duration) var(--trans-timing);
+}
+
+.main__title {
+   margin-bottom: 50px;
+
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 1.2;
+   color: var(--title-color);
+   text-align: center;
 }

@@ -28,7 +28,7 @@
 
 .site-nav__link--current { 
    position: relative; 
-   @extend %accent-color;
+   color: var(--accent-color);
 }
 
 .site-nav__link--current::after {
