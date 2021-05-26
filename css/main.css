@@ -714,15 +714,18 @@ img {
   margin-left: auto;
 }
 
+.footer-links {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bcg-footer-color);
+}
+
 .container__footer-links {
   display: flex;
   width: 1200px;
-  padding-top: 60px;
-  padding-bottom: 60px;
   align-items: baseline;
   flex-wrap: nowrap;
   font-family: var(--main-font);
-  background-color: var(--bcg-footer-color);
 }
 
 .address-links {
